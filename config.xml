@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.adbras.play" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name> Assembléia de Deus Ministério Belem </name>
+    <name> Ad Belém </name>
     <description>
-        Assembléia de Deus Ministério Belem 
+        Este aplicativo é uma ferramenta destinada a transmissão dos programas de Rádio da Assembléia de Deus Ministério Belem em São Paulo. Nosso objetivo é levar a palavra de Deus e conteúdo Cristão, informação e música.
+					A Direção Geral de conteúdo é do Pr. José Wellington Bezerra da Costa, Presidente da Convenção Geral da Assembléia de Deus no Brasil e Confradesp.
+				
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+       Michel Cerqueira
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
