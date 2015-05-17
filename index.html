@@ -1,0 +1,305 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assembléia de Deus Ministério Belém</title>
+	<link rel="stylesheet" href="css/ab.min.css" />
+	<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+<!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.js"></script>
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/splash/splash-icon-big.png">
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 	media="screen and (max-device-width: 320px)" />  
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen-six.png" media="(device-width: 375px)">
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen-six-plus.png" media="(device-width: 414px)">
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
+<style>
+	
+	
+	.landing-wrapper{
+		border: 0px solid #000;
+		width: 100%;
+		position:relative;
+		   height: 80%;
+		  
+	}
+	.landing-logo{
+		  margin: 0 auto;
+		  position: relative;
+		  margin-left: auto;
+		  margin-right: auto;
+		  display: -webkit-box;
+		  width:78%;
+		  
+	
+	}
+	.ui-mobile{
+		 
+		  width: 100%;
+		  height: auto;
+		  /* border: 10px solid #000; */
+		  position: relative;	
+	}
+	#pag1,#contato {
+		background-image: url(images/bg.png);
+	}
+	#slider-0{
+		display:none;
+	}
+	#contato .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+		background-color: transparent;
+		border-color: #dddddd;
+		color: #333333;
+		text-shadow: 0 1px 0 #eeeeee;
+		font-weight: bold;
+	}
+
+	.footer{
+	  background-color: transparent !important;
+	  border-color: #dddddd;
+	  color: #333333;
+	  text-shadow: 0 1px 0 #eeeeee;
+	  font-weight: bold;
+	}
+	#contato .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+	  background-color: transparent;
+	  border-color: transparent;
+	  color: #333333;
+	  text-shadow: 0 0px 0 #eeeeee;
+	  font-weight: bold;
+	}
+	.ui-header, .ui-footer {
+	  border-width: 0px 0;
+	  border-style: solid;
+	  position: relative;
+	}
+	.paginamenu{
+		  background-color: #000000;
+		  border-color: #dddddd;
+		  color: #FFFFFF;
+		  text-shadow: 0 0px 0 #f3f3f3;
+		  opacity: 0.7;
+		      
+		}
+	
+	
+	@media screen and (orientation: landscape)
+.ui-mobile .ui-page {
+  min-height: 100% !important;
+}
+}	
+</style>
+<script>
+	 function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
+    }
+	 
+    // Handle the volume up button
+    //
+    function onVolumeUpKeyDown() {
+		alert();
+    }
+			
+
+function loadURL(url){
+    navigator.app.loadUrl(url, { openExternal:true });
+    return false;
+} 
+    
+	
+	</script>
+	
+	
+</head>
+<body class="ui-mobile landing-page" onload="onLoad()">
+	
+	<div data-role="page" class="all-elements" id="pag1">
+		<div data-role="header"style="background-color: #e9e9e9;" >
+			 <h1>Igreja Assembléia de Deus</h1>		
+		</div>
+		<div data-role="footer" style="text-align:center;" class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#" data-theme="a">NO AR</a></li>
+				<li><a href="#social" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
+				
+			  </ul>
+			</div>   
+		</div>
+		<div id="home" role="main" class="ui-content landing-page">
+			<div class="landing-wrapper">			
+				<img class="landing-logo" src="images/logo.png" alt="img">
+				<audio id="som" controls autoplay>
+					<!--<source src="http://198.27.64.63:8344/stream">-->
+					<source src="http://198.27.64.63:8364/stream" >
+					Your browser does not support the audio element.
+				</audio>
+				<!-- <label for="slider-0">Input slider:</label>
+					<input type="range" name="slider" id="slider-0" value="25" min="0" max="100"  />-->
+			</div>		
+		</div>
+		
+		
+			
+			
+	</div>	
+	<!-- PAGE CONTATO -->
+	<div data-role="page" class="all-elements" id="contato">
+		<div data-role="header"style="background-color: #e9e9e9;" class="topo" >
+			 <h1>Igreja Assembléia de Deus</h1>		
+		</div>
+		<div data-role="footer" style="overflow:hidden;"  class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#pag1" data-theme="a">NO AR</a></li>
+				<li><a href="#social" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
+				
+			  </ul>
+			</div>
+			<div class="landing-wrapper paginamenu">			
+				<ol data-role="listview" data-theme="b">
+				  
+				  <li><a href="#site" data-ajax="false">Acesse nosso site</a></li>
+				  <li data-theme="a"><a href="mailto:adbelemnoar@gmail.com">Peça sua música</a></li>
+				  <li><a href="mailto:adbelemnoar@gmail.com">Envie um e-mail</a></li>
+				</ol>
+				<br>
+			</div>		
+		</div>
+		
+	</div>
+	
+	<!--fim contato-->
+	
+	<!-- SITE IFRAME -->
+	<div data-role="page" class="all-elements" id="site">
+		<div data-role="header"style="background-color: #e9e9e9;" class="topo" >
+			 <h1>Igreja Assembléia de Deus</h1>		
+		</div>
+		<div data-role="footer" style="overflow:hidden;"  class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#pag1" data-theme="a">NO AR</a></li>
+				<li><a href="#social" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
+				
+			  </ul>
+			</div>
+			<div id="home" role="main" class="ui-content landing-page">
+				<div class="landing-wrapper">
+					 <iframe width="100%" height="100%" src="http://www.ieadsp.com.br/"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+			 
+			
+	<!--FIM SITE IFRAME -->
+	<!-- inicio sociais -->
+	
+	
+	<div data-role="page" class="all-elements" id="social">
+		<div data-role="header"style="background-color: #e9e9e9;" class="topo" >
+			 <h1>Igreja Assembléia de Deus</h1>		
+		</div>
+		<div data-role="footer" style="overflow:hidden;"  class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#pag1" data-theme="a">NO AR</a></li>
+				<li><a href="#social" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
+				
+			  </ul>
+			</div>
+			<div class="landing-wrapper paginamenu">			
+				<ol data-role="listview" data-theme="b">
+				  <li><a href="http://www.facebook.com/Adbelemnoradio" target="_blank">Facebook</a></li>
+				  <li><a href="https://twitter.com/adbelemnoradio"target="_blank" data-ajax="false">Twitter</a></li>
+				  
+				</ol>
+				<br>
+			</div>		
+		</div>
+		
+	</div>
+	
+	<!--fim sociais-->
+	<!-- iframe facebook -->
+	
+	<!-- facebook IFRAME -->
+	<div data-role="page" class="all-elements" id="facebook">
+		<div data-role="header"style="background-color: #e9e9e9;" class="topo" >
+			 <h1>Igreja Assembléia de Deus</h1>		
+		</div>
+		<div data-role="footer" style="overflow:hidden;"  class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#pag1" data-theme="a">NO AR</a></li>
+				<li><a href="#" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
+				
+			  </ul>
+			</div>
+			<div id="home" role="main" class="ui-content landing-page">
+				<div class="landing-wrapper">
+					 <iframe width="100%" height="100%" src="http://www.facebook.com/Adbelemnoradio"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+			 
+			
+	<!--FIM SITE IFRAME facebook -->
+	
+	
+	<!-- inicio frame twitter-->
+	<!-- facebook IFRAME -->
+	<div data-role="page" class="all-elements" id="twitter">
+		<div data-role="header"style="background-color: #e9e9e9;" class="topo" >
+			 <h1>Igreja Assembléia de Deus</h1>		
+		</div>
+		<div data-role="footer" style="overflow:hidden;"  class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#pag1" data-theme="a">NO AR</a></li>
+				<li><a href="#" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
+				
+			  </ul>
+			</div>
+			<div id="home" role="main" class="ui-content landing-page">
+				<div class="landing-wrapper">
+					 <iframe width="100%" height="100%" src="http://twitter.com/adbelemnoradio"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+			 
+			
+	<!--FIM SITE IFRAME -->
+	
+	<!-- fim frame twitter>
+	
+	
+	
+
+</body>
+	
