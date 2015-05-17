@@ -46,9 +46,33 @@
 		  /* border: 10px solid #000; */
 		  position: relative;	
 	}
-	#pag1,#contato {
-		background-image: url(images/bg.png);
+	#pag1, #contato, #social {
+	  background-image: url(images/bg.png);
+	  background-repeat: no-repeat;
+	  background-size: cover;
 	}
+	#som{
+	
+		  position: relative;
+		  margin-left: auto;
+		  margin-right: auto;
+		  display: block;
+		  margin-top: 30px;
+		    width: 100%;
+	}
+	
+	.ui-header .ui-title, .ui-footer .ui-title {
+  font-size: 1em;
+  min-height: 1.1em;
+  text-align: center;
+  display: block;
+  margin: 0 0%;
+  padding: .7em 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: 0!important;
+}
 	#slider-0{
 		display:none;
 	}
@@ -89,42 +113,65 @@
 		}
 	
 	
-	@media screen and (orientation: landscape)
-.ui-mobile .ui-page {
-  min-height: 100% !important;
-}
-}	
-</style>
-<script>
-	 function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
-    }
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        // Register the event listener
-        document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
-    }
-	 
-    // Handle the volume up button
-    //
-    function onVolumeUpKeyDown() {
-		alert();
-    }
-			
-
-function loadURL(url){
-    navigator.app.loadUrl(url, { openExternal:true });
-    return false;
-} 
-    
+	@media screen and (orientation: landscape){
+		.ui-mobile .ui-page {
+		  min-height: 100% !important;
+		}
+	}	
+	@media screen and (orientation: landscape){
+		.ui-mobile .ui-page {
+		  min-height: 100% !important;
+		}
+	}	
 	
-	</script>
+	@media(min-width:1024px) and (max-width:1100px){
+		.landing-logo {
+		  margin: 0 auto;
+		  position: relative;
+		  margin-left: auto;
+		  margin-right: auto;
+		  display: -webkit-box;
+		  width: 51%;
+		}
+	}	
+	
+	@media (max-width: 360px){
+		.landing-logo {
+		  margin: 0 auto;
+		  position: relative;
+		  margin-left: auto;
+		  margin-right: auto;
+		  display: -webkit-box;
+		  width: 90%;
+		}
+	}
+	@media screen and(min-width:1024px) and (orientation: portrait){
+		.landing-logo {
+		  margin: 0 auto;
+		  position: relative;
+		  margin-left: auto;
+		  margin-right: auto;
+		  display: -webkit-box;
+		  width: 38%;
+		}	
+	}
+	
+	
+	@media (min-width:1200px){
+		.landing-logo {
+		  margin: 0 auto;
+		  position: relative;
+		  margin-left: auto;
+		  margin-right: auto;
+		  display: -webkit-box;
+		  width: 41%;
+		}	
+	}	
+</style>
 	
 	
 </head>
-<body class="ui-mobile landing-page" onload="onLoad()">
+<body class="ui-mobile landing-page" >
 	
 	<div data-role="page" class="all-elements" id="pag1">
 		<div data-role="header"style="background-color: #e9e9e9;" >
